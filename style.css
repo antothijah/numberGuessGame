@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("background.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.container-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.inputText {
+    flex-basis: content;
+    border: none;
+    outline: none;
+    height: 50px;
+    font-family: sans-serif;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 5px;
+    padding: 2px 5px;
+    font-size: 120%;
+    transition: 0.2s;
+}
+
+.inputText:active, .butn:active {
+    box-shadow: 0px 0px 20px white;
+}
+
+.butn:active {
+    border: 2px solid rgb(157, 152, 152);
+}
+
+.butn:hover {
+    background-color: gainsboro;
+}
+
+.inputText:hover {
+    box-shadow: 0px 0px 20px aquamarine;
+}
+
+.butn {
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 5px;
+    padding: 2px 10px;
+    margin-left: 10px;
+    font-size: 120%;
+    font-family: sans-serif;
+    transition: 0.2s;
+}
+
+.fake {
+    /* border: 2px solid black; */
+    width: 300px;
+    margin: 70px auto;
+    height: 100px;
+    box-sizing: border-box;
+}
+
+/* .initial {
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    font-size: 160%;
+    font-weight: bolder;
+    font-family: sans-serif;
+} */
+
+.real {
+    width: fit-content;
+    height: fit-content;
+    padding: 50px 70px;
+    margin: auto;
+    text-align: center;
+    font-size: 160%;
+    font-weight: bolder;
+    font-family: sans-serif;
+    box-shadow: 0px 0px 15px rgb(215, 206, 206);
+    border-radius: 10px;
+}
+
+.green {
+    background-color: rgb(107, 228, 107);
+}
+
+.red {
+    background-color: rgb(230, 46, 46);
+}
+
+.gray {
+    background-color: rgb(126, 124, 124);
+}
+
+.white {
+    background-color: whitesmoke;
+}
+
+.orange {
+    background-color: rgb(245, 187, 80);
+}
+
+@media (max-width: 369px) {
+    .butn {
+        margin-left: 0;
+        margin-top: 20px;
+        padding: 10px 5px;
+        flex-basis: 40%;
+    }
+}
+
+@media (max-width: 306px) {
+    .real {
+        padding: 30px 50px;
+    }
+}
+
+@media (max-width: 300px) {
+    .container-1 {
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 273px) {
+    .container-1 {
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 258px) {
+    .container-1 {
+        margin-left: 20%;
+        /* margin-right: 5%; */
+    }
+
+    .inputText {
+        flex-basis: 90%;
+    }
+
+    .butn {
+        flex-basis: 90%;
+    }
+}
+
+@media (max-width: 245px) {
+    .container-1 {
+        margin-left: 30%;
+    }
+}
+
+@media (max-width: 200px) {
+    .container-1 {
+        margin-left: 50%;
+    }
+}
+
+@media (max-width: 180px) {
+    .container-1 {
+        margin-left: 70%;
+    }
+}
